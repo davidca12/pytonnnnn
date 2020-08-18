@@ -7,10 +7,15 @@ def spin_chamber():
 	return chamber_position
 
 #  DON'T CHANGE THE CODE ABOVE
-def fire_gun():
+def fire_gun(num):
 	# YOUR CODE HERE
+    if bullet_position==num:
+        return "You are dead! "+str(num)
+    else:
+        return "Keep playing! "+str(num)
+    
 
 
 
-
-print(fire_gun())
+num=spin_chamber()
+print(fire_gun(num))
